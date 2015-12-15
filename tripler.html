@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tripler</title>
+</head>
+<body>
+
+  <h1></h1>
+
+  <script>
+  var tripler = function (number) {
+    var answer = number * 3;
+    console.log(answer);
+    return answer;
+  };
+
+  var tripler2 = function (number) {
+    return number * 3;
+  };
+
+  var multiplier = function(num1, num2) {
+    return num1 * num2;
+  }
+
+
+  //take two numbers
+  var calculation = function (num1, num2) {
+    // take the first number and triple it
+    var first = tripler (num1);
+
+    //multiply that result by the second number
+    var answer = multiplier(first, num2);
+
+    console.log("answer", answer);
+  };
+
+calculation(3, 2);
+  </script>
+
+
+</body>
+</html>

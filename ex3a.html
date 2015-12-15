@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Commas</title>
+</head>
+<body>
+  <div id="target"></div>
+
+  <script type="text/javascript">
+    var n = 1;
+    string ='';
+
+    while (n <= 8) {
+        if (n !== 8) {
+          string += n + ", ";
+        }
+        else {
+          string+=' ' + n;
+        }
+        n++;
+    }
+document.querySelector('#target').textContent = string
+  </script>
+</body>
+</html>

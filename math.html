@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Math</title>
+</head>
+<body>
+  <div id="target"></div>
+
+  <script type="text/javascript">
+
+  var input;
+
+  while( !(input = prompt('Enter a number larger than 0...')) ){
+    console.log("you didn't write anything");
+  }if (isNaN(input)) {
+      console.log("Eh?");
+      alert("That's not a number. Please try again.");
+    }
+    else {
+      document.getElementById("target").innerHTML="You wrote: " + parseInt(input) + "."
+  }
+
+  console.log("yay, you did it! you wrote: " + input)
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bucket List</title>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+</head>
+<body>
+
+  <h1>BUCKET LIST</h1>
+  <div id="bucket"></div>
+
+  <h1>PERFECT MARGARITA</h1>
+  <div id="recipe"></div>
+
+  <script>
+
+  var bucket_list = [];
+  var i = 0;
+  bucket_list[0] = "Visit Japan";
+  bucket_list[1] = "Sleeper car trip through Italy";
+
+  bucket_list.push("Open a boutique with my sister", "Build a workshop");
+  bucket_list.unshift("Become a kick-butt web developer", "Open decorator business");
+
+  var dying_wish = bucket_list.pop();
+  var do_it_now = bucket_list.shift();
+
+  var recipe= [];
+
+  recipe [0]= "Add";
+  recipe [1]= "1 oz. tequila";
+  recipe [2]= "1/2 oz. triple sec";
+  recipe [3]= "1 oz. lime juice";
+  recipe [4]= "simple syrup to the glass";
+  recipe [5]= "Rub lime on the rim of the glass";
+  recipe [6]= "Rub the rim of glass in salt";
+  recipe [7]= "Add a few ice cubes and drink up!";
+
+
+
+  function append_strings(array, target_div) {
+    var i=0;
+    while (i < array.length) {
+      $(target_div).append('<p>' + array[i] + '</p>');
+      i++
+    }
+  }
+
+  append_strings(bucket_list, '#bucket');
+  append_strings(recipe, '#recipe');
+
+</script>
+
+</body>
+</html>

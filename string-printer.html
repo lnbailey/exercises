@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rusty</title>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+</head>
+<body>
+
+  <div id="output"></div>
+
+  <script>
+  var string_printer = function (word) {
+    $('#output').append(word);
+  };
+
+  string_printer("My name is Rusty. <br>");
+  string_printer("No, it's Randy. <br>");
+  string_printer("No, it's James!!");
+
+  </script>
+
+
+</body>
+</html>

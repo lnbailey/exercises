@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Commas</title>
+  <style>
+    .odd {
+      background-color: #999999;
+    }
+    .even {
+      background-color: #333333;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <div id="target"></div>
+
+  <script type="text/javascript">
+    var n = 8,
+    string ='';
+
+    while (n <= 8) {
+        if (n !== 8) {
+          if (n % 2 === 0) {
+            string += "<p class="even">"+ n +"</p><hr>";
+          } else {
+            string += "<p class="odd">"+ n +"</p><hr>";
+        }
+      } else {
+          if (n % 2 === 0) {
+            string += "<p class="even">"+ n +"</p><hr>";
+          } else {
+            string += "<p class="odd">"+ n +"</p><hr>";
+          }
+          string += "<p>"+ n +"</p><hr>";
+        }
+      }
+      n++;
+    }
+document.querySelector('#target').innerHTML = string
+  </script>
+</body>
+</html>

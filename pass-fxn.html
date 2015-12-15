@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pass a Function</title>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+</head>
+<body>
+
+<div id="returnValue"></div>
+<!-- <button id="awesome">Awesome</button> -->
+<script>
+
+  var func2 = function () {
+    return "Cats are awesome!"
+  }
+
+  var kittens = function (cats) {
+    var answer = cats();
+    $(#returnValue).text(answer);
+  }
+
+</script>
+
+<!-- <button id="awesome">Awesome</button>
+
+<script>
+var awesomeFunction = function () {
+  alert("That was awesome!")
+};
+
+$('#awesome').on('click', awsomeFunction);
+
+var runner = function (fn) {
+  console.log('You passed a function!')
+  fn();
+}
+
+</script> -->
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplication</title>
+</head>
+<body>
+  <div id="target"></div>
+
+  <script type="text/javascript">
+
+  var n = 1, product = 0;
+
+  while (n <= 10) {
+    product = product + n;
+    n++;
+  }
+  document.querySelector('#target').innerHTML = "The sum of 1 through " + (n - 1) + " is "+ product +",";
+
+  </script>
+</body>
+</html>

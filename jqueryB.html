@@ -1,0 +1,54 @@
+
+
+<html>
+<head>
+<title>jQuery</title>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+<div id="everything">
+<h1>A heading!</h1>
+<p>Here's some text!</p>
+<p>Here's a second set of text!</p>
+<div class="holder">
+<ul>
+<li>List Item 1</li>
+<li>List Item 2</li>
+<li>List Item 3</li>
+</ul>
+</div>
+<div class="holder">
+<ol>
+<li>List Item 4</li>
+<li>List Item 5</li>
+<li>List Item 6</li>
+</ol>
+</div>
+<div id="change-me">This part needs to change!</div>
+<div id="secret">We should hide this!</div>
+</div>
+
+<script>
+  $('h1').css('color', 'blue');
+  $('body').css('background-color', 'gray');
+  $('#everything').css('font-size', '2em');
+  $('.holder').css('border', 'solid black 2px');
+  $('li').css('font-weight', 'bold');
+  $('h1').next('p').css('color', 'green');
+  $('#secret').css('display', 'block');
+  $('#change-me').text('Hooray! I changed the text!!');
+  $('#change-me').append(' Add this to my current text');
+  $('#change-me').html('<p>We are replacing what I have with this</p><p>And with a 2nd paragraph');
+  $('#change-me').append('<p>And we added a 3rd paragraph</p>');
+
+  $('ul li:first-child').text('First new sentence');
+  $('ul li:nth-child(2)').text('Second new sentence');
+  $('ul li:nth-child(3)').text('Third new sentence');
+  $('ol li:first-child').text('Lobsters are tasty');
+  $('ol li:nth-child(2)').text('I like them with butter');
+  $('ol li:nth-child(3)').text('And with a nice white wine');
+</script>
+</body>
+</html>

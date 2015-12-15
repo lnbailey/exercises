@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+
+  <button class="beepbeep">BEEP ME BRO</button>
+  <br>
+  <br>
+  <button class="bg">Background Changer</button>
+
+<script>
+document.querySelector('.beepbeep').addEventListener('click',function() {
+  var content = '<p>beep</p>';
+  var el = document.createElement('div');
+  el.innerHTML = content;
+  document.body.appendChild(el);
+});
+  document.querySelector('.bg').addEventListener('click',function() {
+  var randomColor = '#' + Math.random().toString(16).slice(2, 8);
+    var target = document.body;
+    target.style.background = randomColor;
+});
+  </script>
+
+</body>
+</html>

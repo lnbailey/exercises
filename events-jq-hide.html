@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+
+</head>
+<body>
+
+    <div id="money">Show me the money.
+      <p></p>
+    </div>
+    <div id="oprah">Show me the Oprah
+      <p></p>
+    </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+
+  <script>
+    $('div').click(function(){
+      var target = $(this).attr('id');
+      if (target === 'money') {
+
+        if ($(this).hasClass('hidden') === true) {
+          $(this).removeClass('hidden');
+          $(this).children('p').text('Here is the money');
+        } else if ($(this).hasClass('hidden') === false) {
+          $(this).addClass('hidden');
+          $(this).children('p').text('');
+        }
+      } else {
+        $(this).children('p').text('HERE IS A NEW CAR');
+    }
+    });
+  </script>
+
+
+</body>
+</html>

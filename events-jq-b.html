@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+
+</head>
+<body>
+
+  <div>
+    <p class="green">Show me the money.</p>
+    <p>Show me the <span class="oprah">Oprah</span>.</p>
+    <p class="hide">HIDE</p>
+  </div>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+
+  <script>
+    $('.green').click(function(){
+      $('.green').show().css('color', 'green')
+    });
+    $('.oprah').click(function(){
+      $('.oprah').show().css('font-size', '5em')
+    });
+    $('.hide').click(function(){
+      $('.hide').show().css('font-size', '5em')
+    });
+  </script>
+
+
+</body>
+</html>
